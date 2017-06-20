@@ -16,26 +16,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
 <link href="css/common.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 <link rel="shortcut icon" href="">
 
 <!--[if lt IE 9]>
 <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
-</head>
-<body>
-
-
-<p>gagag</p>
 <!-- SCRIPTS -->
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 
 
+</head>
+<body>
+	<div class="container">
+		<form>
+	        <ul>
+	            <li>ID4桁<span>(必須)</span>：<input type="text" name="id" class="required"></li>
+	            <li>お名前<span>(必須)</span>：<input type="text" name="name" class="required"></li>
+	            <li>郵便番号<span>(必須)</span><input type="text" name="postnumber" class="required"></li>
+	            <li>住所<span>(必須)</span>：<input type="text" name="address" class="required"></li>
+	            <li>電話番号<span>(必須)</span>：<input type="text" name="tel" class="required"></li>
+	            <li>メールアドレス<span>(必須)</span>：<input type="text" name="mail" class="required"></li>
+	            <li><input type="submit"></li>
+	        </ul>
+	    </form>
+	</div>
 </body>
 </html>

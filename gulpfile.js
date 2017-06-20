@@ -17,7 +17,7 @@ gulp.task('bs-reload', function () {
 	browserSync.reload();
 });
 
-//scっsコンパイル
+//scssコンパイル
 gulp.task("sass", function() {
 	gulp.src("./sass/**/*.scss")
 		.pipe(sass())
@@ -25,9 +25,11 @@ gulp.task("sass", function() {
 		.pipe(gulp.dest("./css"))
 });
 
+
 //下記ファイルが変更されたリロード。
 gulp.task('default', ['browser-sync'], function () {
 	gulp.watch("./**/*.scss", ['sass']);
 	gulp.watch("./*.html", ['bs-reload']);
+	gulp.watch("./**/*.js", ['bs-reload']);
 	gulp.watch("./css/*.css", ['bs-reload']);
 });
